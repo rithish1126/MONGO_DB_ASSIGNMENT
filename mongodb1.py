@@ -241,9 +241,9 @@ def main():
         elif ch==17:
             document={
             "_id" : 9845798437598,
-            "name" : "Kannamma",
-            "email" : "kannamma@gmail.com",
-            "password" : "12345"
+            "name" : "Devarithish",
+            "email" : "devarithish1@gmail.com",
+            "password" : "hello1234"
             }
             usersCollections.insert_one(document)
         elif ch==18:
