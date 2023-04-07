@@ -2,28 +2,28 @@
 
 ### 1) Find top 10 users who made the maximum number of comments
 
-Praneeth's Approach:
-  Praneeth first groups the documents by the users name and counts the comments made by the users and then sorts the documents according to the number of     comments and only returns the top 10.
- 
- Rohith's Approach:
-  Rohiths's approach also groups the documents by the users name and counts the comments made by the users and then sorts the documents according to the     number of comments and only returns the top 10.
+      Praneeth's Approach:
+        Praneeth first groups the documents by the users name and counts the comments made by the users and then sorts the documents according to the               number of comments and only returns the top 10.
+
+       Rohith's Approach:
+        Rohiths's approach also groups the documents by the users name and counts the comments made by the users and then sorts the documents according to         the number of comments and only returns the top 10.
 
 ### 2)Find top 10 movies with most comments
 
- Praneeth's Approach:
-  Praneeth first groups all the movie ids and then counts the number of comment records in the comments collection and then proceeds to match these ids       received from the comments collection with the movie ids in the movies collection to get the title name of the movie and proceeds to print them.
-  
- Rohith's Approach:
-  Rohith also first groups all the movie ids and then counts the number of comment records in the comments collection and then proceeds to match these ids       received from the comments collection with the movie ids in the movies collection to get the title name of the movie and proceeds to print them.
+     Praneeth's Approach:
+      Praneeth first groups all the movie ids and then counts the number of comment records in the comments collection and then proceeds to match these ids       received from the comments collection with the movie ids in the movies collection to get the title name of the movie and proceeds to print them.
+
+     Rohith's Approach:
+      Rohith also first groups all the movie ids and then counts the number of comment records in the comments collection and then proceeds to match these       ids received from the comments collection with the movie ids in the movies collection to get the title name of the movie and proceeds to print them.
 
  
  ### 2)Given a year find the total number of comments created each month in that year
  
- Praneeth's approach:
-  Praneeth first takes the input from the user on the year to be selected to match in the query and then proceeds to group the comments per the month in     the given year and takes the count using the sum function and then sorts according to the count ascending wise. 
-  
-  Rohith's approach:
-   Rohith also takes the input from the user on the year to be selected to match in the query and then proceeds to group the comments per the month in        the given year and takes the count using the sum function and then sorts according to the count ascending wise. 
+         Praneeth's approach:
+          Praneeth first takes the input from the user on the year to be selected to match in the query and then proceeds to group the comments per the n.           month in the given year and takes the count using the sum function and then sorts according to the count ascending wise. 
+
+          Rohith's approach:
+           Rohith also takes the input from the user on the year to be selected to match in the query and then proceeds to group the comments per the month            in the given year and takes the count using the sum function and then sorts according to the count ascending wise. 
 
  ### 3)Find top `N` movies - with the highest IMDB rating
       Praneeth's Approach:
@@ -76,6 +76,21 @@ Praneeth's Approach:
         Rohith's Approach:
             the same approach was taken by rohith
 ### 13) Find top `N` movies for each genre with the highest IMDB rating
+        Praneeth's Approach:
+          Praneeth is grouping the records based on the genre and the film titles and then proceeds to sort the records according to the IMDB ratings from           the movies collections.
+        Rohith's Approach:
+          Rohith on the other hand unwinds all the elements in the genre array and groups them together and then proceeds to loop through the records and             for every matches every genre and then returns the top N records by sorting according to highest IMDB rating and limiting by N records.
+### 14) Top 10 cities with the maximum number of theatres
+        Praneeth's Approach:
+            groups the records according to the city and counts the theatres in that city using the sum operator.
+        Rohith's Approach:
+            Rohith has also used the same above approach.
+### 15) top 10 theatres nearby given coordinates
+        Praneeth's Approach:
+            Praneeth uses the near operator which is a geo spatial operator that returns the records having near by coordinates to the ones entered by the             user.
+        Rohith's Approach:
+            Rohith has also used the same approach by using the near operator to tackle this question.
+  
         
         
 
